@@ -21,16 +21,16 @@
 	* **解决高度塌陷方案二：** 可以直接在高度塌陷的父元素之后，添加一个空白的div，由于这个div没有浮动，所以他是可以撑开父元素的高度的，然后在对其进行清除浮动，这样可以通过空白div撑开父元素高度，基本没有副作用。
 	* **解决高度塌陷方案三：** 通过after伪类向元素的最后添加一个空白的块元素，然后对其清除浮动。
 	    ```
-	    	.clearfix:after{
-    			/*添加一个内容*/
-   		 	content: "";
-    			display: block;
-    			clear: both;
-		}
-		/*IE不支持after伪类,需要使用haslayout*/
-		.clearfix{
-    			zoom: 1;
-		}
+	    .clearfix:after{
+    	        /*添加一个内容*/
+  	        content: "";
+    		display: block;
+    		clear: both;
+	     }
+	     /*IE不支持after伪类,需要使用haslayout*/
+	     .clearfix{
+    		zoom: 1;
+	     }
 	    ```
 # html-css
   ### oppo主页
