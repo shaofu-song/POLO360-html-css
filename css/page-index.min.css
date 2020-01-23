@@ -1,0 +1,47 @@
+body{background:url(../image/body-bg.png) repeat-x}
+.clearfix:before,.clearfix:after{content:"";display:table;clear:both}
+.clearfix{zoom:1}
+.w{width:940px;margin:0px auto}
+.header{padding-top:37px;padding-bottom:46px}
+.logo{margin-left:15px}
+.nav{float:right;margin-top:22px}
+.nav li{float:left;padding:0px 10px 8px 10px;border-left:1px #d6d6d6 dotted}
+.nav a{font:bold 14px Georgia;color:#666666;text-decoration:none}
+.nav a:hover{color:#a1a1a1;text-decoration:underline}
+.nav p{font:11px Tahoma;color:#b7b7b7}
+.banner{height:356px;background:url(../image/banner-bg.png) no-repeat;background-position:bottom center;position:relative}
+.pointerDiv{position:absolute;top:314px;left:15px}
+.pointerDiv a{float:left;width:17px;height:17px;background:url(../image/pointer.png) no-repeat;margin-left:4px}
+.pointerDiv .active,.pointerDiv a:hover{background:url(../image/pointer-active.png) no-repeat}
+.content{}
+.content h1{font:bold 24px Georgia;color:#000000;text-align:center;padding-top:6px;background:url(../image/line.png) no-repeat;background-position:bottom center;padding-bottom:20px;margin-bottom:38px}
+.content .pl,.content .cs,.content .uc{float:left;width:300px}
+.content .cs{margin:0px 20px}
+.content h2{color:#11719e;font:21px Georgia}
+.content h3{color:#8c8c8c;font:12px Myriad Pro}
+.content .imgDiv{widows:299px;height:190px;background:url(../image/img-bg.png) no-repeat;margin:16px 0px 10px 0px;text-align:center;padding-top:12px}
+.content p{height:92px;color:#3e3e3e;font:13px Helvetica;margin-left:4px;word-spacing:2px}
+.content .lm{display:block;width:163px;height:40px;background:url(../image/btn1.png) no-repeat;text-decoration:none;color:#016999;font:12px/40px Helvetica;text-indent:1em;margin-bottom:35px;margin-left:4px}
+.contact{background:url(../image/line.png) no-repeat top center}
+.contact .sc,.contact .co,.contact .nu{float:left;width:300px}
+.contact .co{margin:0px 20px}
+.contact .txt{width:276px;height:33px;line-height:33px;background:url(../image/input.png) no-repeat;_background-attachment:fixed;border:none;padding:0px 10px;margin:0px 0px 16px 0px;color:d4d4d4;font:10px Verdana}
+.contact .tarea{width:276px;height:114px;background:url(../image/textarea.png) no-repeat;_background-attachment:fixed;border:none;resize:none;padding:10px 10px;margin:0px;color:d4d4d4;font:10px Verdana;overflow:auto}
+.contact .btn{width:163px;height:32px;background:url(../image/btn2.png) no-repeat;color:#ffffff;font:13px Georgia;text-align:left;text-indent:1em;border:none;padding:0px;margin:11px 0px 23px 0px;cursor:pointer}
+.contact h2{font:18px/1 Georgia;color:#444444;border-bottom:1px dashed #d3d3d3;padding:44px 0px 10px 0px;margin-bottom:15px}
+.sc p{color:#444444;font:12px/1 Helvetica}
+.icon{font-size:0px;margin-top:5px}
+.icon a{margin-right:6px}
+.contact .nl{color:#444444;font:bold 18px/1 "Gill Sans MT";padding:32px 0 10px}
+.sc .txt{margin-top:18px;margin-bottom:0px}
+.nu p img{float:left;margin-right:8px}
+.nu p{height:57px;_height:60px;color:#444444;font:12px/1 Myriad Pro;border-bottom:1px dashed #d3d3d3;padding-bottom:9px;margin-bottom:15px}
+.nu .no-margin{margin-bottom:0px}
+.nu .btn{_margin-left:-1em}
+.footer{height:183px;background-color:#333333;border-top:10px solid #4c4c4c}
+.footer a,.footer p{color:#999999;font:11px Myriad Pro;text-decoration:none}
+.footer a:hover{color:#cccaca;text-decoration:underline}
+.footer p{margin-left:8px;margin-right:23px;margin-bottom:6px}
+.footer .copy{float:right;_display:inline}
+.footer .w{padding-top:18px}
+.footer a:hover{color:#cacaca;text-decoration:underline}

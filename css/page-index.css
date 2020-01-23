@@ -1,0 +1,348 @@
+body{
+    /* 设置背景图片 */
+    background: url(../image/body-bg.png) repeat-x;
+}
+/* 解决高度塌陷 */
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+}
+/* 固定宽度并居中 */
+.w{
+    width: 940px;
+    margin: 0px auto;
+}
+/* header样式 */
+.header{
+    /* 设置上内边距 */
+    padding-top: 37px;
+    /* 设置下内边距 */
+    padding-bottom: 46px;
+}
+/* logo样式 */
+.logo{
+    /* 设置左外边距 */
+    margin-left: 15px;
+}
+/* 导航条样式 */
+.nav{
+    /* 向右浮动 */
+    float: right;
+    /* 设置上外边距 */
+    margin-top: 22px;
+}
+/* 导航条列表样式 */
+.nav li{
+    /* 向左浮动 */
+    float: left;
+    /* 设置左、右内边距 */
+    padding: 0px 10px 8px 10px;
+    /* 设置左边框 */
+    border-left: 1px #d6d6d6 dotted;
+}
+/* 导航条超链接样式 */
+.nav a{
+    /* 设置字体样式 */
+    font: bold 14px Georgia; /* 粗细 大小 字体 */
+    color: #666666;
+    /* 去除下划线 */
+    text-decoration: none;
+}
+/* 设置导航条超链接伪类 */
+.nav a:hover{
+    color: #a1a1a1;
+    text-decoration: underline;
+}
+/* 导航条p标签样式 */
+.nav p{
+    /* 设置字体样式 */
+    font: 11px Tahoma;
+    color: #b7b7b7;
+}
+/* 设置banner样式 */
+.banner{
+    /* 设置高度（不设置的话高度被img撑开 阴影无法显示） */
+    height: 356px;
+    /* 设置背景图片 */
+    background: url(../image/banner-bg.png) no-repeat;
+    /* 背景图片位置 */
+    background-position: bottom center;
+    /* 父元素开启相对定位 */
+    position: relative;
+}
+/* 设置pointerDiv样式 */
+.pointerDiv{
+    /* 开启绝对定位 */
+    position: absolute;
+    /* 绝对定位位置 */
+    top: 314px;
+    left: 15px;
+}
+/* 设置banner按钮 */
+.pointerDiv a{
+    /* 向左浮动并把a变成块元素（下面设置宽高） */
+    float: left;
+    /* 设置宽高 */
+    width: 17px;
+    height: 17px;
+    /* 设置背景图片 */
+    background: url(../image/pointer.png) no-repeat;
+    /* 设置左外边距 */
+    margin-left: 4px;
+}
+/* 设置banner-active按钮和伪类 */
+.pointerDiv .active,
+.pointerDiv a:hover{
+    background: url(../image/pointer-active.png) no-repeat;
+}
+/* 设置content样式 */
+.content{
+    
+}
+/* 设置content中的h1 */
+.content h1{
+    /* 设置字体样式 */
+    font: bold 24px Georgia;
+    color: #000000;
+    text-align: center;
+    /* 设置上内边距 */
+    padding-top: 6px;
+    /* 设置背景图片 */
+    background: url(../image/line.png) no-repeat;
+    background-position: bottom center;
+    /* 设置下内边距（移动line） */
+    padding-bottom: 20px;
+    /* 设置下外边距 */
+    margin-bottom: 38px;
+}
+/* 设置content中的div */
+.content .pl, .content .cs, .content .uc{
+    float: left;
+    width: 300px;
+}
+/* 设置content中的cs样式 */
+.content .cs{
+    /* 左右外边距20px */
+    margin: 0px 20px;
+}
+/* 设置h2样式 */
+.content h2{
+    color: #11719e;
+    font: 21px Georgia;
+}
+/* 设置h3样式 */
+.content h3{
+    color: #8c8c8c;
+    font: 12px Myriad Pro;
+}
+/* 设置imgDiv样式 */
+.content .imgDiv{
+    widows: 299px;
+    height: 190px;
+    /* 设置背景图片 */
+    background: url(../image/img-bg.png) no-repeat;
+    /* 设置上下外边距 */
+    margin: 16px 0px 10px 0px;
+    /* 图片水平居中 */
+    text-align: center;
+    /* 使图片垂直居中 */
+    padding-top: 12px;
+}
+/* 设置content中的p样式 */
+.content p{
+	height: 92px;
+    color: #3e3e3e;
+    font: 13px Helvetica;
+    /* 设置左外边距 */
+    margin-left: 4px;
+    word-spacing: 2px;
+}
+/* 设置content中的button样式 */
+.content .lm{
+    /* 内联元素改块元素 */
+    display: block;
+    width: 163px;
+    height: 40px;
+    background: url(../image/btn1.png) no-repeat;
+    text-decoration: none;
+    color: #016999;
+    /* 设置字体样式 行高40px（跟button高度相等 垂直居中） */
+    font: 12px/40px Helvetica;
+    /* 向右缩进1个字符 */
+    text-indent: 1em;
+    /* 设置下外边距 */
+    margin-bottom: 35px;
+    /* 设置左外边距 */
+    margin-left: 4px;
+}
+/* 设置contact样式 */
+.contact{
+    background: url(../image/line.png) no-repeat top center;
+}
+/* 设置contact中的div */
+.contact .sc, .contact .co, .contact .nu{
+    float: left;
+    width: 300px;
+}
+/* 设置content中的co样式 */
+.contact .co{
+    /* 左右外边距20px */
+    margin: 0px 20px;
+}
+/* 设置contact中的表单项 */
+.contact .txt{
+    /* 指定宽高和背景图片 */
+    width: 276px;
+    height: 33px;
+	line-height: 33px;
+    background: url(../image/input.png) no-repeat;
+	/* 单独为ie6设置背景不随元素滚动 */
+	_background-attachment: fixed;
+    /* 去除边框 */
+    border: none;
+    /* 去除默认边距 */
+    padding: 0px 10px;
+    margin: 0px 0px 16px 0px;
+    /* 字体 */
+    color: d4d4d4;
+    font: 10px Verdana;
+}
+.contact .tarea{
+    /* 指定宽高和背景图片 */
+    width: 276px;
+    height: 114px;
+    background: url(../image/textarea.png) no-repeat;
+	/* 单独为ie6设置背景不随元素滚动 */
+	_background-attachment: fixed;
+    /* 去除边框 */
+    border: none;
+    /* 设置文本域不能改变大小 */
+    resize: none;
+    /* 去除默认边距 */
+    padding: 10px 10px;
+    margin: 0px;
+    /* 字体 */
+    color: d4d4d4;
+    font: 10px Verdana;
+    /* 清除IE滚动条样式 */
+    overflow: auto;
+}
+/* 设置contact中的btn */
+.contact .btn{
+    /* 指定宽高和背景图片 */
+    width: 163px;
+    height: 32px;
+    background: url(../image/btn2.png) no-repeat;
+    /* 设置字体 */
+    color: #ffffff;
+    font: 13px Georgia;
+    text-align: left;
+    text-indent: 1em;
+    /* 去除边框 */
+    border: none;
+    /* 去除默认边距 */
+    padding: 0px;
+    margin: 11px 0px 23px 0px;
+
+    /* 鼠标指针样式 */
+    cursor: pointer;
+}
+/* 设置contact中的h2 */
+.contact h2{
+    /* 设置字体样式 */
+    font: 18px/1 Georgia;
+    color: #444444;
+    /* 设置下边框 */
+    border-bottom: 1px dashed #d3d3d3;
+    /* 设置上下外边距 */
+    padding: 44px 0px 10px 0px;
+    /* 设置下内边距 */
+    margin-bottom: 15px;
+}
+/* 设置contact左侧p标签 */
+.sc p{
+    color: #444444;
+    font: 12px/1 Helvetica;
+}
+/* 设置icon间距 */
+.icon {
+    /* 清除间距 */
+    font-size: 0px;
+    margin-top: 5px;
+}
+.icon a{
+    margin-right: 6px;
+}
+/* 设置左侧的nl */
+.contact .nl{
+    color: #444444;
+    font: bold 18px/1 "Gill Sans MT";
+    /* margin-top: 18px; */
+	padding: 32px 0 10px;
+}
+/* 设置左侧的txt边距 */
+.sc .txt{
+    margin-top: 18px;
+    margin-bottom: 0px;
+}
+/* 设置右侧p标签 */
+.nu p img{
+    float: left;
+    margin-right: 8px;
+}
+.nu p{
+    height: 57px;
+	/* 单独为ie6设置高 度 */
+	_height: 60px;
+    color: #444444;
+    font: 12px/1 Myriad Pro;
+    border-bottom: 1px dashed #d3d3d3;
+    padding-bottom: 9px;
+    margin-bottom: 15px;
+}
+.nu .no-margin{
+    margin-bottom: 0px;
+}
+/* 兼容ie6 */
+.nu .btn{
+	_margin-left: -1em;
+}
+
+/* 设置footer样式 */
+.footer{
+    height: 183px;
+    background-color: #333333;
+    border-top: 10px solid #4c4c4c;
+}
+/* footer中的超链接和p */
+.footer a, .footer p{
+    color: #999999;
+    font: 11px Myriad Pro;
+    text-decoration: none;
+}
+.footer a:hover{
+	color: #cccaca;
+	text-decoration: underline;
+}
+.footer p{
+	margin-left: 8px;
+	margin-right: 23px;
+	margin-bottom: 6px;
+}
+.footer .copy{
+    float: right;
+	/* 处理双倍边距的bug */
+	_display: inline;
+}
+.footer .w{
+    padding-top: 18px;
+}
+.footer a:hover{
+    color: #cacaca;
+    text-decoration: underline;
+}
