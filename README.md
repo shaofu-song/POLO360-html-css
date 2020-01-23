@@ -22,14 +22,14 @@
 	* **解决高度塌陷方案三：** 通过after伪类向元素的最后添加一个空白的块元素，然后对其清除浮动。
 	```
 	.clearfix:after{
-    	  /*添加一个内容*/
-          content: "";
-          display: block;
-    	  clear: both;
+	  /*添加一个内容*/
+	  content: "";
+	  display: block;
+	  clear: both;
 	 }
 	 /*IE不支持after伪类,需要使用haslayout*/
 	 .clearfix{
-    	   zoom: 1;
+	   zoom: 1;
 	 }
 	 ```
    * **4.CSS hack：** 指的是一种特殊的代码，只能在某些浏览器识别，其他浏览器不能识别，通过这种方式为浏览器设置特殊的代码。
