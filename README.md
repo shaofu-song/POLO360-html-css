@@ -23,7 +23,7 @@
 	    ```
 	    .clearfix:after{
     	        /*添加一个内容*/
-  	        content: "";
+                content: "";
     		display: block;
     		clear: both;
 	     }
